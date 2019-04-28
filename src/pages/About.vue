@@ -1,13 +1,18 @@
 <template>
   <div id="app">
-    <router-view></router-view>
+    <router-link to="/">home</router-link>
+    <HelloWorld msg="Welcome to My About Page"/>
   </div>
 </template>
 
 <script>
+import HelloWorld from '../components/HelloWorld.vue'
 
 export default {
-  name: 'app'
+  name: 'About',
+  components: {
+    HelloWorld
+  }
 }
 </script>
 
